@@ -1,1 +1,0 @@
-{"ast":null,"code":"import sanityClient from '@sanity/client';\nexport default sanityClient({\n  projectId: 'bzsuj7m6',\n  // you can find this in sanity.json\n  dataset: 'master',\n  // or the name you chose in step 1\n  useCdn: false // `false` if you want to ensure fresh data\n\n});","map":null,"metadata":{},"sourceType":"module"}
