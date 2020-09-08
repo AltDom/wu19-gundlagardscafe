@@ -1,22 +1,21 @@
 // index.js
-import Link from "next/link";
-import groq from "groq";
-import client from "../client";
+import Link from 'next/link';
+import groq from 'groq';
+import client from '../client';
 
 const Index = (props) => {
-  const { posts = [] } = props;
+  const { pages = [] } = props;
   return (
     <div>
       <h1>Welcome to a blog!</h1>
-      {console.log(posts)}
-      {posts.map(
-        ({ _id, title = "", slug = "", _updatedAt = "" }) =>
+      {console.log(pages)}
+      {pages.map(
+        ({ _id, title = '', slug = '', _updatedAt = '' }) =>
           slug && (
             <li key={_id}>
-              <Link href="/post/[slug]" as={`/post/${slug.current}`}>
+              <Link href="/[slug]" as={`/${slug.current}`}>
                 <a>{title}</a>
-              </Link>{" "}
-              ({new Date(_updatedAt).toDateString()})
+              </Link>{' '}
             </li>
           )
       )}
@@ -25,9 +24,9 @@ const Index = (props) => {
 };
 
 Index.getInitialProps = async () => ({
-  posts: await client.fetch(groq`
-      *[_type == "post" && publishedAt < now()]|order(publishedAt desc)
-    `),
+  pages: await client.fetch(groq`
+      *[_type == "page"]
+    `)
 });
 
 export default Index;

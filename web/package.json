@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "next-on-netlify"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "@sanity/image-url": "^0.140.19",
     "groq": "^1.150.1",
     "next": "^9.5.3",
+    "next-on-netlify": "^2.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
