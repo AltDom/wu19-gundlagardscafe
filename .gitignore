@@ -3,7 +3,7 @@
 
 # Dependency directories
 /node_modules
-studio/node_modules/*
+/studio/node_modules/*
 /lerna-debug.log
 
 # VS Code files
