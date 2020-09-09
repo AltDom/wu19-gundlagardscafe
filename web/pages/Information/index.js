@@ -1,22 +1,21 @@
-import client from "../../client";
-import Layout from "../../components/Layout";
+import client from '../../client';
+import Layout from '../../components/Layout';
 
-    const Information = (props) => {
-      return (
-        <>
-          <Layout props={props.pages[2]} />
-          <h1>{props.pages[2].heroText}</h1>
-          {console.log(props.pages[0].heroText)}
-        </>
-      )
-    };
+const Information = (props) => {
+  return (
+    <>
+      <Layout props={props} />
+      <h1>{props.pages[2].heroText}</h1>
+    </>
+  );
+};
 
 export async function getStaticProps() {
-
   const pages = await client.fetch('*[_type == "page" ]');
+  const local = await client.fetch(`*[_type == "page"][2]`);
 
   return {
-    props: { pages },
+    props: { pages, local }
   };
 }
 

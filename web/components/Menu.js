@@ -1,22 +1,25 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const Menu = ({ props }) => {
   return (
     <>
-      {/* {props.map(
-        ({ _id, title = "", slug = "", _updatedAt = "" }) =>
-          slug && (
-            <li key={_id}>
-              <Link href="/[slug]" as={`/${slug.current}`}>
-                <a>{title}</a>
-              </Link>{" "}
-            </li>
-          )
-          )} */}
+      <ul>
+        {props.pages.map((page, i) => {
+          {
+            if (page.slug.current !== 'gundla') {
+              return (
+                <li key={i}>
+                  <Link href={`/${page.slug.current}`} as={`/${page.slug.current}`}>
+                    <a>{page.title}</a>
+                  </Link>{' '}
+                </li>
+              );
+            }
+          }
+        })}
+      </ul>
     </>
   );
 };
-
-
 
 export default Menu;
