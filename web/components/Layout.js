@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import Header from './Header';
-import Footer from './Footer';
+import Head from "next/head";
+import Header from "./Header";
+import Footer from "./Footer";
 
-const Layout = (props) => {
+const Layout = ({ props }) => {
   return (
     <>
-      {/* <Header>
-        <title>{context.title || 'Missing title props'}</title>
-      </Header> */}
-      {/* <Footer /> */}
+      <Header props={props}>
+        <title>{props.title || "Missing title props"}</title>
+      </Header>
+      <Footer />
     </>
   );
 };
