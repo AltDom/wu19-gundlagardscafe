@@ -5,12 +5,14 @@ import Footer from "./Footer";
 const Layout = ({ props }) => {
   return (
     <>
-      <Header props={props}>
+      <Head>
         <title>{props.title || "Missing title props"}</title>
-      </Header>
+      </Head>
+      <Header props={props} />
       <Footer />
     </>
   );
 };
 
 export default Layout;
+

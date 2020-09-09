@@ -3,8 +3,7 @@ import Link from "next/link";
 const Menu = ({ props }) => {
   return (
     <>
-      {console.log(props)}
-      {props.map(
+      {/* {props.map(
         ({ _id, title = "", slug = "", _updatedAt = "" }) =>
           slug && (
             <li key={_id}>
@@ -13,9 +12,11 @@ const Menu = ({ props }) => {
               </Link>{" "}
             </li>
           )
-      )}
+          )} */}
     </>
   );
 };
+
+
 
 export default Menu;
