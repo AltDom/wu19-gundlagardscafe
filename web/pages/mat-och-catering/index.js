@@ -1,22 +1,22 @@
 import client from '../../client';
 import Layout from '../../components/Layout';
 
-const Information = (props) => {
+const MatCatering = (props) => {
   return (
     <>
       <Layout props={props} />
-      <h1>{props.pages[3].heroText}</h1>
+      <h1>{props.pages[0].heroText}</h1>
     </>
   );
 };
 
 export async function getStaticProps() {
   const pages = await client.fetch('*[_type == "page" ]');
-  const local = await client.fetch(`*[_type == "page"][3]`);
+  const local = await client.fetch(`*[_type == "page"][0]`);
 
   return {
     props: { pages, local }
   };
 }
 
-export default Information;
+export default MatCatering;

@@ -1,38 +1,21 @@
-// index.js
-import Information from "./Information";
-import Layout from "../components/Layout";
-import Link from "next/link";
-import groq from "groq";
-import client from "../client";
-
+import Layout from '../components/Layout';
+import client from '../client';
 
 const Index = (props) => {
-  const { pages = [] } = props.pages;
   return (
-    <div>
-  {/* <Layout props={props.pages} /> */}
-      <h1>Welcome to a blog!</h1>
-      {console.log(props)}
-      {/* {console.log(props.pages)}
-      {props.pages.map(
-        ({ _id, title = '', slug = '', _updatedAt = '' }) =>
-          slug && (
-            <li key={_id}>
-              <Link href="/[slug]" as={`/${slug.current}`}>
-                <a>{title}</a>
-              </Link>{' '}
-            </li>
-          )
-      )} */}
-    </div>
+    <>
+      <Layout props={props} />
+      <h1>Gundla!!</h1>
+    </>
   );
 };
 
 export async function getStaticProps() {
   const pages = await client.fetch('*[_type == "page"]');
+  const local = await client.fetch(`*[_type == "page"][1]`);
 
   return {
-    props: { pages },
+    props: { pages, local }
   };
 }
 
