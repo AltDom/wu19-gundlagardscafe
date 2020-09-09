@@ -4,6 +4,8 @@
 # Dependency directories
 web/node_modules
 web/.next
+web/out_functions
+web/out_publish
 studio/node_modules
 
 # lerna files
