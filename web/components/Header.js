@@ -1,22 +1,18 @@
 import Menu from './Menu';
 import imageUrlBuilder from '@sanity/image-url';
 import client from '../client';
-import { useRouter } from 'next/router';
+import getLocalProps from '../functions/getLocalProps';
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 
 const Header = ({ props }) => {
-  const currentURL = useRouter().pathname;
+  const currentPageData = getLocalProps(props);
   return (
     <>
       <Menu props={props} />
-      {props.pages.map((page, i) => {
-        if (`/${page.slug.current}` == currentURL) {
-          return <img key={i} src={urlFor(page.heroImage.asset).width(200).url()} />;
-        }
-      })}
+      <img src={urlFor(currentPageData.heroImage.asset).width(200).url()} />;
     </>
   );
 };
