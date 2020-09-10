@@ -12,10 +12,9 @@ const Index = (props) => {
 
 export async function getStaticProps() {
   const pages = await client.fetch('*[_type == "page"]');
-  const local = await client.fetch(`*[_type == "page"][1]`);
 
   return {
-    props: { pages, local }
+    props: { pages }
   };
 }
 

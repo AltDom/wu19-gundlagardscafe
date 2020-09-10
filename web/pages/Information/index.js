@@ -12,10 +12,9 @@ const Information = (props) => {
 
 export async function getStaticProps() {
   const pages = await client.fetch('*[_type == "page" ]');
-  const local = await client.fetch(`*[_type == "page"][2]`);
 
   return {
-    props: { pages, local }
+    props: { pages }
   };
 }
 
