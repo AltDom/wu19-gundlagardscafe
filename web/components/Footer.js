@@ -1,6 +1,4 @@
-import styles from "./Footer.module.css";
-import client from "../client";
-import Link from "next/Link";
+import styles from './Footer.module.css';
 
 const Footer = ({ props }) => {
   return (

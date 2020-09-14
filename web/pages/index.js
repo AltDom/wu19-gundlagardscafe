@@ -1,12 +1,12 @@
-import Layout from "../components/Layout";
-import client from "../client";
-import Footer from "../components/Footer";
+import Layout from '../components/Layout';
+import client from '../client';
+import Footer from '../components/Footer';
+// import styles from '../styles/layout.module.css';
 
 const Index = (props) => {
   return (
     <>
       <Layout props={props} />
-      <h1>Gundla!!</h1>
       <Footer props={props.footerFields} />
     </>
   );
@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const footerFields = await client.fetch('*[_type == "footer"]');
 
   return {
-    props: { pages, footerFields },
+    props: { pages, footerFields }
   };
 }
 

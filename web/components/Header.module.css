@@ -1,0 +1,24 @@
+.heroImage {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.heroDiv {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+  color: var(--color-white);
+}
+
+.blackGraphic {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+}
+
+.heroTitle {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+}

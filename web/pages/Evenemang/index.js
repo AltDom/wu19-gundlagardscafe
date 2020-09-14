@@ -1,6 +1,6 @@
-import client from "../../client";
-import Layout from "../../components/Layout";
-import Footer from "../../components/Footer";
+import client from '../../client';
+import Layout from '../../components/Layout';
+import Footer from '../../components/Footer';
 
 const Information = (props) => {
   return (
@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const footerFields = await client.fetch('*[_type == "footer"]');
 
   return {
-    props: { pages, footerFields },
+    props: { pages, footerFields }
   };
 }
 
