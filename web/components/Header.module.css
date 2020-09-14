@@ -1,12 +1,13 @@
 .heroImage {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
 }
 
 .heroDiv {
-  position: relative;
-  margin: auto;
+  position: absolute;
+  top: 150px;
+  margin-left: 15px;
   z-index: 2;
   color: var(--color-white);
 }

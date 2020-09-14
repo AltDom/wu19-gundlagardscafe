@@ -9,6 +9,10 @@ const Layout = ({ props }) => {
       <Head>
         <link rel="shortcut icon" href="/static/favicon.ico" />
         <title>{currentPageData.title || "Missing title props"}</title>;
+        <link
+          href="https://fonts.googleapis.com/css2?family=Arvo&family=Raleway&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Header props={props} />
     </>
