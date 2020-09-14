@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const Menu = ({ props }) => {
   return (
@@ -9,9 +9,12 @@ const Menu = ({ props }) => {
             if (page.slug) {
               return (
                 <li key={i}>
-                  <Link href={`/${page.slug.current}`} as={`/${page.slug.current}`}>
+                  <Link
+                    href={`/${page.slug.current}`}
+                    as={`/${page.slug.current}`}
+                  >
                     <a>{page.title}</a>
-                  </Link>{' '}
+                  </Link>{" "}
                 </li>
               );
             }
