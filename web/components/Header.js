@@ -13,13 +13,14 @@ const Header = ({ props }) => {
   return (
     <>
       <Menu props={props} />
-      <img src={urlFor(currentPageData.heroImage.asset).url()} className={styles.heroImage} />
-      <div className={styles.heroDiv}>
-        {/* <img
-          src={urlFor(currentPageData.blackGraphic.asset).url()}
-          className={styles.blackGraphic}
-        /> */}
-        <h1 className={styles.heroTitle}>{currentPageData.title}</h1>
+      <div className={styles.headerContainer}>
+        <div className={styles.heroDiv}>
+          <div className={styles.relativeHeroDiv}>
+            <img src="/images/black-graphic.svg" className={styles.blackGraphic} />
+            <h1 className={styles.heroTitle}>{currentPageData.title}</h1>
+          </div>
+        </div>
+        <img src={urlFor(currentPageData.heroImage.asset).url()} className={styles.heroImage} />
       </div>
     </>
   );
