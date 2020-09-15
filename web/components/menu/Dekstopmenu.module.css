@@ -1,4 +1,4 @@
-.DesktopMenu {
-  display: flex;
+.desktopMenu {
+  display: none;
   list-style: none;
 }

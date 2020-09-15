@@ -3,7 +3,7 @@ import styles from './Dekstopmenu.module.css';
 
 const Desktopmenu = ({ props }) => {
   return (
-      <ul className={styles.DesktopMenu}>
+      <ul className={styles.desktopMenu}>
         {props.pages.map((page, i) => {
           {
             if (page.slug) {

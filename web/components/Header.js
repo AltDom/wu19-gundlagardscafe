@@ -1,4 +1,4 @@
-import Menu from './Menu';
+import Navbar from './menu/Navbar';
 import imageUrlBuilder from '@sanity/image-url';
 import client from '../client';
 import getLocalProps from '../functions/getLocalProps';
@@ -12,7 +12,7 @@ const Header = ({ props }) => {
   const currentPageData = getLocalProps(props);
   return (
     <>
-      <Menu props={props} />
+      <Navbar props={props} />
       <img src={urlFor(currentPageData.heroImage.asset).url()} className={styles.heroImage} />
       <div className={styles.heroDiv}>
         {/* <img

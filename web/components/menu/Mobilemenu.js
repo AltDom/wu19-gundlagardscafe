@@ -3,7 +3,7 @@ import styles from './Mobilemenu.module.css';
 
 const Mobilemenu = ({ props }) => {
   return (
-      <ul className={styles.MobileMenu}>
+      <ul className={styles.mobileMenu}>
         {props.pages.map((page, i) => {
           {
             if (page.slug) {

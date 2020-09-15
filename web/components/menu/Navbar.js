@@ -6,8 +6,8 @@ import MobileMenu from "./MobileMenu";
 const Navbar = ({ props }) => {
   const [showMenu, setShowMenu] = useState(false);
 
-  let displayMobilemenu;
   let mobileMenuText = "Meny";
+  let displayMobilemenu;
   let ariaExpandedValue = false;
 
   if (showMenu) {
@@ -17,10 +17,10 @@ const Navbar = ({ props }) => {
   }
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       <button
+        className={styles.mobileMenuButton}
         onClick={() => setShowMenu(!showMenu)}
-        className={styles.MobileMenuButton}
         type="button"
         aria-haspopup="true"
         aria-expanded={`${ariaExpandedValue}`}
