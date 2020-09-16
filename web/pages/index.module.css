@@ -5,7 +5,7 @@
 .buttonSection button {
   border: none;
   height: 70px;
-  width: 170px;
+  width: 165px;
   font-family: var(--primary-font);
   font-size: 16px;
   box-shadow: gray 0px 0px 6px 0px;
@@ -24,6 +24,7 @@
 }
 .buttonSection {
   display: flex;
+  margin-top: 20px;
 
   justify-content: space-between;
 }
@@ -47,4 +48,23 @@
   box-shadow: gray 0px 0px 6px 0px;
   background-color: #3b5998;
   color: var(--color-white);
+}
+
+.instagramButton {
+  border: none;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  box-shadow: gray 0px 0px 6px 0px;
+  background-color: #405de6;
+  color: var(--color-white);
+}
+
+.map {
+  width: 100%;
+  border: 1px solid black;
 }
