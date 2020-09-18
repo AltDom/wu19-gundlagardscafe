@@ -29,7 +29,14 @@
   justify-content: space-between;
 }
 
-.mainHeader {
+.mainHeaderFind {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.mainHeaderOpening {
   font-family: var(--primary-font);
   font-size: 24px;
   font-weight: 200;
@@ -67,4 +74,36 @@
 .map {
   width: 100%;
   border: 1px solid black;
+}
+
+@media only screen and (min-width: 800px) {
+  .frontPage {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .mainheaderFind {
+    display: none;
+  }
+
+  .buttonSection {
+    display: none;
+  }
+  .mainHeaderOpening {
+    display: none;
+  }
+
+  .openingHoursInfo {
+    display: none;
+  }
+  .facebookButton {
+    display: none;
+  }
+  .instagramButton {
+    display: none;
+  }
+
+  .map {
+    height: 400px;
+  }
 }

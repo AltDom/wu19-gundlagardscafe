@@ -1,7 +1,6 @@
 import styles from "./InstagramFeed.module.css";
 
 const InstagramFeed = ({ props }) => {
-  console.log(props);
   const allImages = props.graphql.user.edge_owner_to_timeline_media.edges;
   const sixImages = allImages.slice(0, 6);
 

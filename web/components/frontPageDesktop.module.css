@@ -1,0 +1,65 @@
+.frontPageDesktop {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutUs h1 {
+  font-size: 24px;
+  font-family: var(--primary-font);
+  font-weight: 100;
+}
+
+.openingHours h1 {
+  font-size: 24px;
+  font-family: var(--primary-font);
+  font-weight: 100;
+}
+
+.facebookButton {
+  border: none;
+  height: 70px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  box-shadow: gray 0px 0px 6px 0px;
+  background-color: #3b5998;
+  color: var(--color-white);
+}
+
+.instagramButton {
+  border: none;
+  height: 70px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  box-shadow: gray 0px 0px 6px 0px;
+  background-color: #405de6;
+  color: var(--color-white);
+}
+
+.aboutUs {
+  width: 40%;
+}
+
+.openingHours {
+  width: 40%;
+}
+
+@media only screen and (max-width: 800px) {
+  .frontPageDesktop {
+    display: none;
+  }
+}
