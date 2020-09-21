@@ -1,9 +1,9 @@
 import Link from "next/link";
+import styles from './Dekstopmenu.module.css';
 
-const Menu = ({ props }) => {
+const Desktopmenu = ({ props }) => {
   return (
-    <>
-      <ul>
+      <ul className={styles.desktopMenu}>
         {props.pages.map((page, i) => {
           {
             if (page.slug) {
@@ -21,8 +21,8 @@ const Menu = ({ props }) => {
           }
         })}
       </ul>
-    </>
-  );
+  )
 };
 
-export default Menu;
+
+export default Desktopmenu;

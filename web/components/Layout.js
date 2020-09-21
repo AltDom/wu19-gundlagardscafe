@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 import Head from "next/head";
 import Header from "./Header";
 import getLocalProps from "../functions/getLocalProps";
+=======
+import Head from 'next/head';
+import Header from './Header';
+>>>>>>> master
 
-const Layout = ({ props }) => {
-  const currentPageData = getLocalProps(props);
+const Layout = ({ props, currentPageData }) => {
   return (
     <>
       <Head>
@@ -18,7 +22,7 @@ const Layout = ({ props }) => {
           href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
         />
       </Head>
-      <Header props={props} />
+      <Header props={props} currentPageData={currentPageData} />
     </>
   );
 };
