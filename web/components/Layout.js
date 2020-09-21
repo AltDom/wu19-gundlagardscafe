@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import Header from './Header';
-import getLocalProps from '../functions/getLocalProps';
 
-const Layout = ({ props }) => {
-  const currentPageData = getLocalProps(props);
+const Layout = ({ props, currentPageData }) => {
   return (
     <>
       <Head>
@@ -14,7 +12,7 @@ const Layout = ({ props }) => {
           rel="stylesheet"
         />
       </Head>
-      <Header props={props} />
+      <Header props={props} currentPageData={currentPageData} />
     </>
   );
 };

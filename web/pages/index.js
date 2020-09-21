@@ -1,16 +1,20 @@
-import Layout from "../components/Layout";
-import client from "../client";
-import Footer from "../components/Footer";
-import UpperSectionDesktop from "../components/frontPageDesktop";
+import Layout from '../components/Layout';
+import client from '../client';
+import Footer from '../components/Footer';
+import UpperSectionDesktop from '../components/frontPageDesktop';
+import BlockContent from '@sanity/block-content-to-react';
 // import styles from '../styles/layout.module.css';
-import styles from "./index.module.css";
-import InstagramFeed from "../components/InstagramFeed";
-import InstagramFeedDesktop from "../components/InstagramFeedDesktop";
+import styles from './index.module.css';
+import getLocalProps from '../functions/getLocalProps';
+import InstagramFeed from '../components/InstagramFeed';
+import InstagramFeedDesktop from '../components/InstagramFeedDesktop';
 
 const Index = (props) => {
+  const currentPageData = getLocalProps(props);
   return (
     <>
-      <Layout props={props} />
+      {console.log(currentPageData)}
+      <Layout props={props} currentPageData={currentPageData} />
       <div className={styles.frontPage}>
         <div className={styles.buttonSection}>
           <button>
@@ -22,11 +26,9 @@ const Index = (props) => {
           </button>
         </div>
         <h1 className={styles.mainHeaderOpening}> ÖPPETTIDER</h1>
-        <p className={styles.openingHoursInfo}>
-          Våra öppetitdasjdsadff ihsafhsa ifhiha{" "}
-        </p>
+        <p className={styles.openingHoursInfo}>Våra öppetitdasjdsadff ihsafhsa ifhiha </p>
         <button className={styles.facebookButton}> FACEBOOK </button>
-        <UpperSectionDesktop />
+        <UpperSectionDesktop currentPageData={currentPageData} />
         <InstagramFeed props={props.instaJson} />
         <InstagramFeedDesktop props={props.instaJson} />
         <button className={styles.instagramButton}> INSTAGRAM </button>
@@ -45,14 +47,12 @@ const Index = (props) => {
 export async function getStaticProps() {
   const pages = await client.fetch('*[_type == "page"]');
   const footerFields = await client.fetch('*[_type == "footer"]');
-  const instagram = await fetch(
-    "https://www.instagram.com/gundlagardscafe/?__a=1"
-  );
+  const instagram = await fetch('https://www.instagram.com/gundlagardscafe/?__a=1');
 
   const instaJson = await instagram.json();
 
   return {
-    props: { pages, footerFields, instaJson },
+    props: { pages, footerFields, instaJson }
   };
 }
 

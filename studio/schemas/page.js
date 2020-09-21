@@ -31,13 +31,23 @@ export default {
       type: 'string'
     },
     {
-      name: 'subText',
-      title: 'Sub Heading',
+      name: 'bodyOneHeading',
+      title: 'Body One Heading',
       type: 'string'
     },
     {
-      name: 'body',
-      title: 'Body',
+      name: 'bodyOne',
+      title: 'Body One',
+      type: 'blockContent'
+    },
+    {
+      name: 'bodyTwoHeading',
+      title: 'Body Two Heading',
+      type: 'string'
+    },
+    {
+      name: 'bodyTwo',
+      title: 'Body Two',
       type: 'blockContent'
     }
   ],
