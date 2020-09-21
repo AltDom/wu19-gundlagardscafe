@@ -20,6 +20,7 @@
     "next": "^9.5.3",
     "next-on-netlify": "^2.4.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tiny-slider": "^2.9.3"
   }
 }
