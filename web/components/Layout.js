@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 import Head from "next/head";
 import Header from "./Header";
-import getLocalProps from "../functions/getLocalProps";
-=======
-import Head from 'next/head';
-import Header from './Header';
->>>>>>> master
 
 const Layout = ({ props, currentPageData }) => {
   return (
