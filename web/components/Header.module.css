@@ -1,25 +1,51 @@
+.headerContainer {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
 .heroImage {
   width: 100%;
-  position: absolute;
+  height: auto;
+  top: 0;
   z-index: 1;
   top: 0;
 }
 
 .heroDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.relativeHeroDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   margin: auto;
-  z-index: 2;
-  color: var(--color-white);
+  width: 70%;
 }
 
 .blackGraphic {
-  position: relative;
-  margin: auto;
-  z-index: 2;
+  position: absolute;
+  width: 100%;
 }
 
 .heroTitle {
-  position: relative;
-  margin: auto;
-  z-index: 2;
+  position: absolute;
+  color: var(--color-white);
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 150%;
+  z-index: 3;
 }
