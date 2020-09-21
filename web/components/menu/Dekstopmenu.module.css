@@ -1,4 +1,8 @@
 .desktopMenu {
+  /*
+Show above 768px and hide below
+*/
+
   display: none;
   list-style: none;
 }

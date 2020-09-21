@@ -5,9 +5,11 @@
   position: absolute;
   margin: 0 auto;
   min-height: 506px;
+  padding-inline-start: unset;
 }
 .mobileMenu ul {
   display: flex;
+  transition: 4s all;
 }
 .mobileMenu > li > a {
   color: var(--color-white);
@@ -17,7 +19,6 @@
 }
 .mobileMenu > li:nth-child(1) {
   margin-top: 94px;
-  border-top: 1px solid black;
 }
 
 .mobileMenu li {
@@ -25,6 +26,16 @@
 }
 
 [aria-expanded="true"].mobileMenu > ul {
+  transform: translateX(500px);
+  transition: 10s all;
+}
+[aria-expanded="false"].mobileMenu > ul {
   transform: translateX(300px);
-  transition: 1s all;
+  transition: 10s all;
+}
+.slide {
+  transform: translateX(300px);
+}
+.unslide {
+  display: none;
 }

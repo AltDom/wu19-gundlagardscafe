@@ -18,6 +18,7 @@ const Navbar = ({ props }) => {
 
   return (
     <nav className={styles.nav}>
+      <Desktopmenu props={props} />
       <button
         className={styles.mobileMenuButton}
         onClick={() => setShowMenu(!showMenu)}
@@ -28,7 +29,6 @@ const Navbar = ({ props }) => {
         {mobileMenuText}
       </button>
       {displayMobilemenu}
-      <Desktopmenu props={props} />
     </nav>
   );
 };
