@@ -1,8 +1,29 @@
-.desktopMenu {
-  /*
-Show above 768px and hide below
-*/
+/* styles for browsers larger than 960px; */
 
-  display: none;
-  list-style: none;
+@media only screen and (min-width: 960px) {
+  .desktopMenu {
+    display: flex;
+    list-style: none;
+    margin-right: 130px;
+    place-self: center;
+    margin-block-start: 0;
+  }
+  .desktopMenu li {
+    border: 2px solid var(--color-white);
+    padding: 8px;
+    margin: 10px 0 0 64px;
+  }
+  .desktopMenu li a {
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    line-height: 150%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .desktopMenu {
+    display: none;
+  }
 }

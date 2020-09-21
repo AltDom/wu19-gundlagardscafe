@@ -17,7 +17,12 @@ const Navbar = ({ props }) => {
   }
 
   return (
-    <nav className={styles.nav}>
+    <nav role="navigation" className={styles.nav}>
+    <Link href="/">
+    <a>
+    <img src="../../images/logo.svg" alt="Gundla logo" className={styles.logo} />
+    </a>
+    </Link>
       <Desktopmenu props={props} />
       <button
         className={styles.mobileMenuButton}

@@ -8,7 +8,7 @@ const Mobilemenu = ({ props }) => {
         {
           if (page.slug) {
             return (
-              <li key={i}>
+              <li className={styles.mobileMenuItem} key={i}>
                 <hr className={styles.mobileMenuDivider} />
                 <Link
                   href={`/${page.slug.current}`}

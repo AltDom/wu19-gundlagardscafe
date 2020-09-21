@@ -1,41 +1,33 @@
 .mobileMenu {
-  min-width: 262px;
+  min-width: 75%;
   background-color: var(--color-dark-green);
   list-style: none;
   position: absolute;
   margin: 0 auto;
   min-height: 506px;
   padding-inline-start: unset;
+  padding: 56px 20px;
+  right: 0;
 }
 .mobileMenu ul {
   display: flex;
-  transition: 4s all;
+  padding-top: 60px;
 }
-.mobileMenu > li > a {
-  color: var(--color-white);
+.mobileMenuItem {
   text-transform: uppercase;
   font-size: 20px;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition-delay: 2s;
 }
-.mobileMenu > li:nth-child(1) {
-  margin-top: 94px;
+.mobileMenuItem a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 20px;
 }
-
-.mobileMenu li {
-  margin: 0px 0px 0px 40px;
-}
-
-[aria-expanded="true"].mobileMenu > ul {
-  transform: translateX(500px);
-  transition: 10s all;
-}
-[aria-expanded="false"].mobileMenu > ul {
-  transform: translateX(300px);
-  transition: 10s all;
-}
-.slide {
-  transform: translateX(300px);
-}
-.unslide {
-  display: none;
+.mobileMenuDivider {
+  border: 1px solid#48523d;
+  margin: 20px 0;
 }
