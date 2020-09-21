@@ -1,9 +1,7 @@
 import Layout from '../components/Layout';
 import client from '../client';
 import Footer from '../components/Footer';
-import UpperSectionDesktop from '../components/frontPageDesktop';
-import BlockContent from '@sanity/block-content-to-react';
-// import styles from '../styles/layout.module.css';
+import UpperSectionDesktop from '../components/UpperSectionDesktop';
 import styles from './index.module.css';
 import getLocalProps from '../functions/getLocalProps';
 import InstagramFeed from '../components/InstagramFeed';

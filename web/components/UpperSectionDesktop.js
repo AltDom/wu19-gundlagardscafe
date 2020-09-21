@@ -1,4 +1,4 @@
-import styles from './frontPageDesktop.module.css';
+import styles from './UpperSectionDesktop.module.css';
 import BodyContentBlock from './BodyContentBlock';
 
 const UpperSectionDesktop = ({ currentPageData }) => {
