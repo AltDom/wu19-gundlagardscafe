@@ -1,13 +1,13 @@
 import client from '../../client';
 import Layout from '../../components/Layout';
 import Footer from '../../components/Footer';
+import getLocalProps from '../../functions/getLocalProps';
 
 const Information = (props) => {
+  const currentPageData = getLocalProps(props);
   return (
     <>
-      <Layout props={props} />
-
-      <h1>{props.pages[2].heroText}</h1>
+      <Layout props={props} currentPageData={currentPageData} />
       <Footer props={props.footerFields} />
     </>
   );

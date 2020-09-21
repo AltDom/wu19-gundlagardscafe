@@ -48,3 +48,25 @@
   line-height: 150%;
   z-index: 3;
 }
+
+.relativeHeroDivMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  margin: auto;
+  width: 70%;
+}
+
+.heroText {
+  color: var(--color-white);
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  z-index: 3;
+}
