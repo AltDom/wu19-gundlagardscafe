@@ -21,6 +21,8 @@
     "next-on-netlify": "^2.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "tiny-slider": "^2.9.3"
+    "sass": "^1.26.11",
+    "swiper": "^6.2.0",
+    "tiny-slider-react": "^0.5.3"
   }
 }
