@@ -4,14 +4,28 @@
   grid-template-columns: repeat(auto-fit, minmax(493px, 1fr));
   place-items: center;
   max-width: 1183px;
-  margin: 20px auto;
+  margin: 5px 0;
+}
+@media only screen and (min-width: 960px) {
+  .eventsSection {
+    margin: 0 100px;
+  }
 }
 .eventCard {
   max-width: 493px;
-  min-height: 500px;
+  min-height: 515px;
+  margin: 20px 0;
 }
 .eventCard > h1 {
   text-align: center;
   margin: 0;
   text-transform: uppercase;
+  font-family: var(--primary-font);
+  font-size: var(--font-base-size);
+  font-weight: 400;
+  margin: 5px 0;
+}
+.eventCard > p {
+  font-family: var(--secondary-font);
+  margin-block-start: 0;
 }
