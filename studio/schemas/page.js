@@ -26,6 +26,11 @@ export default {
       }
     },
     {
+      name: 'desktopHeroImageHeight',
+      title: 'Desktop Hero Image Height (No. between 0 & 100)',
+      type: 'string'
+    },
+    {
       name: 'heroText',
       title: 'Hero Text',
       type: 'string'
@@ -56,7 +61,7 @@ export default {
     select: {
       title: 'title',
       author: 'author.name',
-      media: 'mainImage'
+      media: 'heroImage'
     },
     prepare(selection) {
       const { author } = selection;
