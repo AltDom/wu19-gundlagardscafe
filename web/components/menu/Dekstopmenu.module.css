@@ -13,6 +13,14 @@
     padding: 8px;
     margin: 10px 0 0 64px;
   }
+  .desktopMenu li.activeNavElement {
+    background-color: var(--color-white);
+  }
+  .desktopMenu li.activeNavElement a {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
   .desktopMenu li a {
     color: var(--color-white);
     text-decoration: none;
