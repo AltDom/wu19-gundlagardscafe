@@ -1,14 +1,7 @@
 .footer {
   background-color: var(--color-brown-accent);
   width: 100%;
-
-  /* To be removed  */
-
-  position: absolute;
-  bottom: -5000px;
-  margin-bottom: 200px;
   padding-bottom: 50px;
-
   color: var(--color-white);
 }
 
