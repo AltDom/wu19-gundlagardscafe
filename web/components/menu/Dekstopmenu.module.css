@@ -13,6 +13,17 @@
     padding: 8px;
     margin: 10px 0 0 64px;
   }
+
+  .desktopMenu li:hover {
+    border: 2px solid var(--color-white);
+    padding: 8px;
+    margin: 10px 0 0 64px;
+    background-color: var(--color-white);
+  }
+  .desktopMenu li:hover > a {
+    color: var(--color-black);
+  }
+
   .desktopMenu li.activeNavElement {
     background-color: var(--color-white);
   }
