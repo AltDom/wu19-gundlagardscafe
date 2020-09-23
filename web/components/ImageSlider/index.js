@@ -1,24 +1,36 @@
-import styles from "./ContactForm.module.css";
-import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
+import styles from "./ImageSlider.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const ImageSlider = () => {
-  {
-    var slider = tns({
-      container: ".my-slider",
-      items: 3,
-      slideBy: "page",
-      autoplay: true,
-    });
-  }
-
-  console.log(tns);
-
   return (
-    <div className={imageSlider}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div className={styles.imageSlider}>
+      <Swiper
+        spaceBetween={60}
+        slidesPerView={2}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <div className={styles.sliderItem}>
+            <img src="/images/soup.png" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.sliderItem}>
+            <img src="/images/sandwich.png" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.sliderItem}>
+            <img src="/images/desserts.png" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.sliderItem}>
+            <img src="/images/salads.png" />
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

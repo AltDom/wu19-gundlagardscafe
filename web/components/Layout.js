@@ -8,12 +8,8 @@ const Layout = ({ props, currentPageData }) => {
         <link rel="shortcut icon" href="/static/favicon.ico" />
         <title>{currentPageData.title + " - Gundla Gårdscafé" || "Gundla Gårdscafé"}</title>;
         <link
-          href="https://fonts.googleapis.com/css2?family=Arvo&family=Raleway&family=Quavo&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Arvo&family=Raleway&display=swap"
           rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
         />
       </Head>
       <Header props={props} currentPageData={currentPageData} />
