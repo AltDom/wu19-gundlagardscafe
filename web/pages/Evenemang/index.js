@@ -2,13 +2,18 @@ import client from '../../client';
 import Layout from '../../components/Layout';
 import Footer from '../../components/Footer';
 import Events from '../../components/Events';
+import BlockContent from '@sanity/block-content-to-react';
 import getLocalProps from '../../functions/getLocalProps';
+import styles from './evenemang.module.css';
 
 const Information = (props) => {
   const currentPageData = getLocalProps(props);
   return (
     <>
       <Layout props={props} currentPageData={currentPageData} />
+      <div className={styles.eventInfo}>
+        <BlockContent blocks={currentPageData.bodyOne} />
+      </div>
       <Events props={props.eventData} />
       <Footer props={props.footerFields} />
     </>

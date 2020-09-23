@@ -1,4 +1,4 @@
-import styles from "./InstagramFeedDesktop.module.css";
+import styles from './InstagramFeedDesktop.module.css';
 
 const InstagramFeedDesktop = ({ props }) => {
   const allImages = props.graphql.user.edge_owner_to_timeline_media.edges;
@@ -6,15 +6,11 @@ const InstagramFeedDesktop = ({ props }) => {
 
   return (
     <>
-      <h1 className={styles.instaHeader}>@GUNDLAGARDSCAFE </h1>
+      <h1 className={styles.instaHeader}>@GUNDLAGARDSCAFE</h1>
       <div className={styles.imgWrapperDesktop}>
         {eightImages.map((image, i) => (
           <div className={styles.instaImgDivDesktop}>
-            <img
-              className={styles.instaImgDesktop}
-              src={image.node.display_url}
-              key={i}
-            />
+            <img className={styles.instaImgDesktop} src={image.node.display_url} key={i} />
           </div>
         ))}
       </div>

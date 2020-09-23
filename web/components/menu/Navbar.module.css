@@ -33,6 +33,7 @@
 }
 .mobileMenuButton {
   background-color: white;
+  font-family: var(--primary-font);
 }
 .mobileMenuButton:focus {
   outline: none;

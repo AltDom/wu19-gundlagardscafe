@@ -2,12 +2,14 @@
   background-color: var(--color-brown-accent);
   width: 100%;
   padding-bottom: 50px;
+  padding-top: 20px;
   color: var(--color-white);
+  margin-top: 20px;
 }
 
 .footer h1 {
   font-family: var(--primary-font);
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   margin-bottom: 0px;
   font-weight: 200;
