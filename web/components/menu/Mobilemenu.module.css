@@ -1,6 +1,6 @@
 .mobileMenu {
   min-width: 75%;
-  background-color: var(--color-dark-green);
+  background-color: var(--color-green);
   list-style: none;
   position: absolute;
   margin: 0 auto;
@@ -8,12 +8,14 @@
   padding-inline-start: unset;
   padding: 56px 20px;
   right: 0;
+  height: 100vh;
 }
 .mobileMenu ul {
   display: flex;
   padding-top: 60px;
 }
 .mobileMenuItem {
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-size: 20px;
   text-decoration: none;
@@ -28,6 +30,16 @@
   font-size: 20px;
 }
 .mobileMenuDivider {
-  border: 1px solid#48523d;
+  border: 1px solid #566248;
   margin: 20px 0;
+}
+.mobileMenuBottomContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-white);
+}
+.mobileMenuBottomContainer > li:nth-child(2) > a {
+  color: var(--color-white);
+  text-decoration: none;
 }

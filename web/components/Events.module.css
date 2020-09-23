@@ -1,21 +1,7 @@
-.eventsSection {
-  display: grid;
-  grid-gap: 20px 20px;
-  grid-template-columns: repeat(auto-fit, minmax(493px, 1fr));
-  place-items: center;
-  max-width: 1183px;
-  margin: 5px 0;
-}
-@media only screen and (min-width: 960px) {
-  .eventsSection {
-    margin: 0 auto;
-    padding: 0 100px;
-  }
-}
 .eventCard {
-  max-width: 493px;
   min-height: 515px;
-  margin: 20px 0;
+  margin: 20px 10px;
+  max-width: 493px;
 }
 .eventCard > h1 {
   text-align: center;
@@ -29,4 +15,29 @@
 .eventCard > p {
   font-family: var(--secondary-font);
   margin-block-start: 0;
+}
+
+/* Above 960px */
+@media only screen and (min-width: 960px) {
+  .eventsSection {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    place-items: center;
+    max-width: 1183px;
+    margin: 0 auto;
+  }
+}
+
+/* Below 960px */
+@media only screen and (max-width: 960px) {
+  .eventsSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 356px;
+    margin: 0 auto;
+  }
+  .eventCard > img {
+    max-width: 100%;
+  }
 }
