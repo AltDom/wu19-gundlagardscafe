@@ -13,12 +13,12 @@ const Navbar = ({ props }) => {
   if (showMenu) {
     displayMobilemenu = <MobileMenu props={props} />;
     ariaExpandedValue = "true";
-    mobileMenuText = "x";
+    mobileMenuText = "";
   }
 
   return (
     <nav role="navigation" className={styles.nav}>
-    <Link href="/">
+    <Link href={`/`} as={`/`}>
     <a>
     <img src="../../images/logo.svg" alt="Gundla logo" className={styles.logo} />
     </a>
