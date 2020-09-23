@@ -33,7 +33,7 @@ export default {
     {
       name: 'heroText',
       title: 'Hero Text',
-      type: 'string'
+      type: 'blockContent'
     },
     {
       name: 'bodyOne',
