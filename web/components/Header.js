@@ -16,7 +16,7 @@ const Header = ({ props, currentPageData }) => {
           <Navbar props={props} />
           {!currentPageData.slug && (
             <div className={styles.relativeHeroDivMain}>
-              <img src="/images/site-title.svg" className={styles.siteTitleImage} />
+              <img src="/images/logo.svg" className={styles.siteTitleImage} />
               <h1 className={styles.heroText}>{currentPageData.heroText}</h1>
             </div>
           )}

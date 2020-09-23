@@ -16,10 +16,20 @@
   font-weight: 100;
 }
 
+.aboutUs p {
+  font-size: 16px;
+  font-family: var(--secondary-font);
+}
+
 .openingHours h1 {
   font-size: 24px;
   font-family: var(--primary-font);
   font-weight: 100;
+}
+
+.openingHours p {
+  font-size: 16px;
+  font-family: var(--secondary-font);
 }
 
 .facebookButton {
@@ -34,6 +44,7 @@
   box-shadow: gray 0px 0px 6px 0px;
   background-color: #3b5998;
   color: var(--color-white);
+  text-decoration: none;
 }
 
 .instagramButton {
@@ -48,6 +59,7 @@
   box-shadow: gray 0px 0px 6px 0px;
   background-color: #405de6;
   color: var(--color-white);
+  text-decoration: none;
 }
 
 .aboutUs {
