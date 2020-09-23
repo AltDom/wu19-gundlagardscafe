@@ -41,14 +41,22 @@
   font-size: 32px;
   line-height: 150%;
 }
-
-.relativeHeroDivMain {
+.relativeHeroDivMobile {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   position: relative;
-  margin: auto 0 auto 10px;
-  width: 90%;
+  margin: auto;
+  width: 100%;
+}
+
+.relativeHeroDivMobile img {
+  width: 70%;
+}
+
+.relativeHeroDivDesktop {
+  display: none;
 }
 
 .heroText {
@@ -86,6 +94,18 @@
     position: absolute;
     width: 50%;
   }
+  .relativeHeroDivMobile {
+    display: none;
+  }
+  .relativeHeroDivDesktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    margin: auto 0 auto 10px;
+    width: 90%;
+  }
+
   .relativeHeroDiv {
     align-items: center;
   }

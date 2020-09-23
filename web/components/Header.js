@@ -16,7 +16,12 @@ const Header = ({ props, currentPageData }) => {
         <div className={styles.heroDiv}>
           <Navbar props={props} />
           {!currentPageData.slug && (
-            <div className={styles.relativeHeroDivMain}>
+            <div className={styles.relativeHeroDivMobile}>
+              <img src="/images/logo.svg" />
+            </div>
+          )}
+          {!currentPageData.slug && (
+            <div className={styles.relativeHeroDivDesktop}>
               <BlockContent className={styles.heroText} blocks={currentPageData.heroText} />
             </div>
           )}
