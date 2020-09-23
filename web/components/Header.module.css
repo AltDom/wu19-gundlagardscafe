@@ -47,20 +47,38 @@
   flex-direction: column;
   justify-content: space-around;
   position: relative;
-  margin: auto;
-  width: 70%;
+  margin: auto 0 auto 10px;
+  width: 90%;
 }
 
 .heroText {
   color: var(--color-white);
+  margin: 0 0 0 100px;
+  width: 100%;
+  text-align: left;
+  text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.heroText h1 {
+  color: var(--color-white);
   margin: 0;
   width: 100%;
-  text-align: center;
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 150%;
+  text-align: left;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 125%;
+}
+
+.heroText p {
+  color: var(--color-white);
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 160%;
 }
 
 @media (min-width: 980px) {
