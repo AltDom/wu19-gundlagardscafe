@@ -14,7 +14,7 @@
   font-size: 16px;
 }
 .bottomSection {
-  margin: 0px 15px 0px 15px;
+  margin: 0px 15px 50px 15px;
   text-align: center;
 }
 
@@ -22,11 +22,18 @@
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.carHeader {
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .bottomSection p {
   font-family: var(--secondary-font);
   font-size: 16px;
+  margin-top: 5px;
 }
 
 .map {
@@ -44,6 +51,9 @@
     margin: 50px 100px 0px 100px;
     text-align: left;
   }
+  .upperSection h1 {
+    font-size: 24px;
+  }
 
   .infoSection {
     display: flex;
@@ -54,6 +64,10 @@
     margin-top: 0px;
   }
 
+  .getHere {
+    margin-top: 10px;
+  }
+
   .infoSection div {
     width: 45%;
     margin-top: 10px;
@@ -61,6 +75,10 @@
 
   .upperSection h1 {
     margin-bottom: 0px;
+  }
+
+  .busHeader {
+    margin-top: 30px;
   }
 
   .bottomSection {
