@@ -9,7 +9,6 @@ import BlockContent from "@sanity/block-content-to-react";
 
 const MatCatering = (props) => {
   const currentPageData = getLocalProps(props);
-
   return (
     <>
       <Layout props={props} currentPageData={currentPageData} />

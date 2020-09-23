@@ -3,6 +3,7 @@ import imageUrlBuilder from '@sanity/image-url';
 import client from '../client';
 import styles from './Header.module.css';
 import HeroImage from './HeroImage';
+import BlockContent from '@sanity/block-content-to-react';
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -15,9 +16,13 @@ const Header = ({ props, currentPageData }) => {
         <div className={styles.heroDiv}>
           <Navbar props={props} />
           {!currentPageData.slug && (
-            <div className={styles.relativeHeroDivMain}>
-              <img src="/images/logo.svg" className={styles.siteTitleImage} />
-              <h1 className={styles.heroText}>{currentPageData.heroText}</h1>
+            <div className={styles.relativeHeroDivMobile}>
+              <img src="/images/logo.svg" />
+            </div>
+          )}
+          {!currentPageData.slug && (
+            <div className={styles.relativeHeroDivDesktop}>
+              <BlockContent className={styles.heroText} blocks={currentPageData.heroText} />
             </div>
           )}
           {currentPageData.slug && (
