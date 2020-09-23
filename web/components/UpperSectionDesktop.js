@@ -1,5 +1,4 @@
 import styles from './UpperSectionDesktop.module.css';
-import BodyContentBlock from './BodyContentBlock';
 import BlockContent from '@sanity/block-content-to-react';
 
 const UpperSectionDesktop = ({ currentPageData }) => {
@@ -10,10 +9,14 @@ const UpperSectionDesktop = ({ currentPageData }) => {
       </div>
 
       <div className={styles.openingHours}>
-        <BlockContent blocks={currentPageData.bodyOne} />
+        <BlockContent blocks={currentPageData.bodyTwo} />
         <div className={styles.bottomSection}>
-          <button className={styles.facebookButton}> FACEBOOK </button>
-          <button className={styles.instagramButton}> INSTAGRAM </button>
+          <a href="https://www.facebook.com/gundlagardscafe" className={styles.facebookButton}>
+            FACEBOOK
+          </a>
+          <a href="https://www.instagram.com/gundlagardscafe" className={styles.instagramButton}>
+            INSTAGRAM
+          </a>
         </div>
       </div>
     </div>

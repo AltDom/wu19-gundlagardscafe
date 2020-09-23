@@ -1,0 +1,25 @@
+.eventInfo {
+  margin: 0px 15px 0px 15px;
+  text-align: center;
+}
+
+.eventInfo h1 {
+  font-size: 22px;
+  font-weight: 200;
+  font-family: var(--primary-font);
+}
+
+.eventInfo p {
+  font-size: 16px;
+  font-family: var(--secondary-font);
+}
+
+@media only screen and (min-width: 800px) {
+  .eventInfo {
+    margin: 50px 100px 50px 100px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+  }
+}

@@ -6,17 +6,35 @@
   max-width: 1183px;
   margin: 5px 0;
 }
+
+.eventText h1 {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.eventText p {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+}
+
 @media only screen and (min-width: 960px) {
   .eventsSection {
     margin: 0 auto;
     padding: 0 100px;
   }
+  .eventText p {
+    text-align: center;
+  }
 }
+
 .eventCard {
   max-width: 493px;
   min-height: 515px;
   margin: 20px 0;
 }
+
 .eventCard > h1 {
   text-align: center;
   margin: 0;
@@ -26,6 +44,7 @@
   font-weight: 400;
   margin: 5px 0;
 }
+
 .eventCard > p {
   font-family: var(--secondary-font);
   margin-block-start: 0;

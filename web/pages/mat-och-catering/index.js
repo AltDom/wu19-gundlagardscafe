@@ -14,10 +14,6 @@ const MatCatering = (props) => {
   return (
     <>
       <Layout props={props} currentPageData={currentPageData} />
-      {/* <BodyContentBlock
-        heading={currentPageData.bodyOneHeading}
-        paragraphArray={currentPageData.bodyOne}
-      /> */}
       <div className={styles.cafeCateringInfo}>
         <div className={styles.cafeInfo}>
           <BlockContent blocks={currentPageData.bodyOne} />
