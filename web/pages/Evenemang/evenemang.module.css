@@ -14,7 +14,7 @@
   font-family: var(--secondary-font);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 960px) {
   .eventInfo {
     margin: 50px 100px 50px 100px;
     text-align: left;

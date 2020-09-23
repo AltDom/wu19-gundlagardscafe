@@ -16,14 +16,18 @@ const Index = (props) => {
       <Layout props={props} currentPageData={currentPageData} />
       <div className={styles.frontPage}>
         <div className={styles.buttonSection}>
-          <button>
-            <p>MAT & CATERING</p>
-            <img src="/images/Food.png" />
-          </button>
-          <button>
-            <p>EVENEMANG</p>
-            <img src="/images/calendar.png" />
-          </button>
+          <a href="/mat-och-catering">
+            <button>
+              <p>MAT & CATERING</p>
+              <img src="/images/Food.png" />
+            </button>
+          </a>
+          <a href="/evenemang">
+            <button>
+              <p>EVENEMANG</p>
+              <img src="/images/calendar.png" />
+            </button>
+          </a>
         </div>
         <BlockContent
           className={styles.mobileText}
