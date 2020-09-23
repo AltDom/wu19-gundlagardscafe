@@ -13,7 +13,7 @@
   object-fit: cover;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 960px) {
   .imageSlider {
     display: none;
   }

@@ -1,11 +1,11 @@
-import client from '../../client';
-import Layout from '../../components/Layout';
-import Footer from '../../components/Footer';
-import getLocalProps from '../../functions/getLocalProps';
-import ContactForm from '../../components/ContactForm';
-import ImageSlider from '../../components/ImageSlider';
-import styles from './mat-och-catering.module.css';
-import BlockContent from '@sanity/block-content-to-react';
+import client from "../../client";
+import Layout from "../../components/Layout";
+import Footer from "../../components/Footer";
+import getLocalProps from "../../functions/getLocalProps";
+import ContactForm from "../../components/ContactForm";
+import ImageSlider from "../../components/ImageSlider";
+import styles from "./mat-och-catering.module.css";
+import BlockContent from "@sanity/block-content-to-react";
 
 const MatCatering = (props) => {
   const currentPageData = getLocalProps(props);
@@ -28,15 +28,15 @@ const MatCatering = (props) => {
           <img src="/images/soup.png" />
         </div>
         <div styles={styles.imageDiv}>
-          {' '}
+          {" "}
           <img src="/images/sandwich.png" />
         </div>
         <div styles={styles.imageDiv}>
-          {' '}
+          {" "}
           <img src="/images/salads.png" />
         </div>
         <div styles={styles.imageDiv}>
-          {' '}
+          {" "}
           <img src="/images/desserts.png" />
         </div>
       </div>
@@ -51,7 +51,7 @@ export async function getStaticProps() {
   const footerFields = await client.fetch('*[_type == "footer"]');
 
   return {
-    props: { pages, footerFields }
+    props: { pages, footerFields },
   };
 }
 
