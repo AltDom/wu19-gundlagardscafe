@@ -6,7 +6,7 @@ const Layout = ({ props, currentPageData }) => {
     <>
       <Head>
         <link rel="shortcut icon" href="/static/favicon.ico" />
-        <title>{currentPageData.title || "Missing title props"}</title>;
+        <title>{currentPageData.title + " - Gundla Gårdscafé" || "Gundla Gårdscafé"}</title>;
         <link
           href="https://fonts.googleapis.com/css2?family=Arvo&family=Raleway&display=swap"
           rel="stylesheet"

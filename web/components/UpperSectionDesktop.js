@@ -1,24 +1,22 @@
 import styles from './UpperSectionDesktop.module.css';
-import BodyContentBlock from './BodyContentBlock';
+import BlockContent from '@sanity/block-content-to-react';
 
 const UpperSectionDesktop = ({ currentPageData }) => {
   return (
     <div className={styles.frontPageDesktop}>
       <div className={styles.aboutUs}>
-        <BodyContentBlock
-          heading={currentPageData.bodyOneHeading}
-          paragraphArray={currentPageData.bodyOne}
-        />
+        <BlockContent blocks={currentPageData.bodyOne} />
       </div>
 
       <div className={styles.openingHours}>
-        <BodyContentBlock
-          heading={currentPageData.bodyTwoHeading}
-          paragraphArray={currentPageData.bodyTwo}
-        />
+        <BlockContent blocks={currentPageData.bodyTwo} />
         <div className={styles.bottomSection}>
-          <button className={styles.facebookButton}> FACEBOOK </button>
-          <button className={styles.instagramButton}> INSTAGRAM </button>
+          <a href="https://www.facebook.com/gundlagardscafe" className={styles.facebookButton}>
+            FACEBOOK
+          </a>
+          <a href="https://www.instagram.com/gundlagardscafe" className={styles.instagramButton}>
+            INSTAGRAM
+          </a>
         </div>
       </div>
     </div>

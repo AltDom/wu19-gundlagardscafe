@@ -4,9 +4,9 @@
 
   /* --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif; */
 
-  --primary-font: "Arvo", serif;
-  --secondary-font: "Raleway", sans-serif;
-  --header-font: "Quavo";
+  --primary-font: 'Arvo', serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --header-font: 'Quavo';
 
   --color-black: #1c1c1c;
   --color-white: #fff;
@@ -43,8 +43,7 @@
   --width-large: 80em;
   --width-x-large: 100em;
 }
-
 @font-face {
-  font-family: Quavo;
-  src: url(/fonts/Quavo.otf);
+  font-family: Arkipelago;
+  src: url(/fonts/Arkipelago.otf);
 }

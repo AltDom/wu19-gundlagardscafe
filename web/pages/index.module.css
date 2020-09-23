@@ -27,11 +27,10 @@
 .buttonSection {
   display: flex;
   margin-top: 20px;
-
   justify-content: space-between;
 }
 
-.mainHeaderFind {
+.mobileText h1 {
   font-family: var(--primary-font);
   font-size: 22px;
   font-weight: 200;
@@ -39,10 +38,9 @@
   margin-top: 30px;
 }
 
-.mainHeaderOpening {
-  font-family: var(--primary-font);
-  font-size: 24px;
-  font-weight: 200;
+.mobileText p {
+  font-family: var(--secondary-font);
+  font-size: 16px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 5px;
@@ -60,6 +58,7 @@
   box-shadow: gray 0px 0px 6px 0px;
   background-color: #3b5998;
   color: var(--color-white);
+  text-decoration: none;
 }
 
 .instagramButton {
@@ -74,6 +73,7 @@
   box-shadow: gray 0px 0px 6px 0px;
   background-color: #405de6;
   color: var(--color-white);
+  text-decoration: none;
 }
 
 .openingHoursInfo {
@@ -89,14 +89,11 @@
     margin-right: 100px;
   }
 
-  .mainheaderFind {
+  .mobileText {
     display: none;
   }
 
   .buttonSection {
-    display: none;
-  }
-  .mainHeaderOpening {
     display: none;
   }
 

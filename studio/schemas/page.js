@@ -36,23 +36,23 @@ export default {
       type: 'string'
     },
     {
-      name: 'bodyOneHeading',
-      title: 'Body One Heading',
-      type: 'string'
-    },
-    {
       name: 'bodyOne',
       title: 'Body One',
       type: 'blockContent'
     },
     {
-      name: 'bodyTwoHeading',
-      title: 'Body Two Heading',
-      type: 'string'
-    },
-    {
       name: 'bodyTwo',
       title: 'Body Two',
+      type: 'blockContent'
+    },
+    {
+      name: 'bodyThree',
+      title: 'Body Three',
+      type: 'blockContent'
+    },
+    {
+      name: 'bodyFour',
+      title: 'Body Four',
       type: 'blockContent'
     }
   ],

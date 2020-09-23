@@ -1,7 +1,7 @@
-import styles from "./Events.module.css";
-import imageUrlBuilder from "@sanity/image-url";
-import client from "../client";
-import BodyContentBlock from "./BodyContentBlock";
+import styles from './Events.module.css';
+import imageUrlBuilder from '@sanity/image-url';
+import client from '../client';
+import BlockContent from '@sanity/block-content-to-react';
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -9,14 +9,18 @@ function urlFor(source) {
 const Events = ({ props }) => {
   return (
     <section className={styles.eventsSection}>
-        {props.map((event, i) => {
-          return (
-            <div className={styles.eventCard}>
-            <img src={urlFor(event.mainImage.asset).url()} alt={event.eventname} />
-          <BodyContentBlock heading={event.eventname} paragraphArray={event.body} />
+      {props.map((event, i) => {
+        return (
+          <div className={styles.eventCard}>
+            <img
+              className={styles.images}
+              src={urlFor(event.mainImage.asset).url()}
+              alt={event.eventname}
+            />
+            <BlockContent className={styles.eventText} blocks={event.body} />
           </div>
-          )
-        })}
+        );
+      })}
     </section>
   );
 };
