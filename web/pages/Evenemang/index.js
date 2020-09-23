@@ -2,6 +2,7 @@ import client from '../../client';
 import Layout from '../../components/Layout';
 import Footer from '../../components/Footer';
 import Events from '../../components/Events';
+import BlockContent from '@sanity/block-content-to-react';
 import getLocalProps from '../../functions/getLocalProps';
 
 const Information = (props) => {
@@ -9,6 +10,8 @@ const Information = (props) => {
   return (
     <>
       <Layout props={props} currentPageData={currentPageData} />
+
+      <BlockContent blocks={currentPageData.bodyOne} />
       <Events props={props.eventData} />
       <Footer props={props.footerFields} />
     </>

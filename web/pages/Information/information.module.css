@@ -50,10 +50,6 @@
     justify-content: space-between;
   }
 
-  .infoSection p {
-    margin-top: 0px;
-  }
-
   .infoSection div {
     width: 45%;
     margin-top: 10px;
