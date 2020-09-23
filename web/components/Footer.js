@@ -12,7 +12,7 @@ const Footer = ({ props }) => {
       <div className={styles.logoDiv}>
         <img src={urlFor(props[0].logo.asset).url()} />
       </div>
-      <h1> Kontakt </h1>
+      <h1> KONTAKT </h1>
 
       <p>{props[0].footerHeader} </p>
 

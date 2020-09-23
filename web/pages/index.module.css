@@ -8,6 +8,8 @@
   width: 165px;
   font-family: var(--primary-font);
   font-size: 16px;
+  background-color: var(--color-white);
+
   box-shadow: gray 0px 0px 6px 0px;
   display: flex;
   flex-direction: column;
@@ -30,15 +32,18 @@
 
 .mobileText h1 {
   font-family: var(--primary-font);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 200;
   text-align: center;
+  margin-top: 30px;
 }
 
 .mobileText p {
   font-family: var(--secondary-font);
   font-size: 16px;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 .facebookButton {
@@ -71,10 +76,11 @@
   text-decoration: none;
 }
 
-.map {
-  width: 100%;
-  height: 300px;
-  border: 1px solid black;
+.openingHoursInfo {
+  font-family: var(--secondary-font);
+  text-align: center;
+  font-size: 16px;
+  margin-top: 0px;
 }
 
 @media only screen and (min-width: 800px) {

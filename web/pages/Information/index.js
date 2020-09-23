@@ -1,10 +1,11 @@
-import client from '../../client';
-import Layout from '../../components/Layout';
-import Footer from '../../components/Footer';
-import getLocalProps from '../../functions/getLocalProps';
-import ContactForm from '../../components/ContactForm';
-import styles from './Information.module.css';
-import BlockContent from '@sanity/block-content-to-react';
+import client from "../../client";
+import Layout from "../../components/Layout";
+import Footer from "../../components/Footer";
+import getLocalProps from "../../functions/getLocalProps";
+import ContactForm from "../../components/ContactForm";
+import styles from "./Information.module.css";
+import BlockContent from "@sanity/block-content-to-react";
+import StreetMap from "../../components/StreetMap";
 
 const Information = (props) => {
   const currentPageData = getLocalProps(props);
@@ -17,15 +18,11 @@ const Information = (props) => {
           <BlockContent blocks={currentPageData.bodyTwo} />
         </div>
       </div>
-      <iframe
-        className={styles.map}
-        src="https://www.openstreetmap.org/export/embed.html?bbox=12.01710063032806%2C57.680112457925965%2C12.035125074908137%2C57.68782099172957&amp;layer=mapnik"
-      ></iframe>
+      <StreetMap />
+
       <div className={styles.bottomSection}>
-        {/* <div className={styles.infoSection}> */}
         <BlockContent blocks={currentPageData.bodyThree} />
         <BlockContent blocks={currentPageData.bodyFour} />
-        {/* </div> */}
       </div>
       <ContactForm />
       <Footer props={props.footerFields} />
@@ -38,7 +35,7 @@ export async function getStaticProps() {
   const footerFields = await client.fetch('*[_type == "footer"]');
 
   return {
-    props: { pages, footerFields }
+    props: { pages, footerFields },
   };
 }
 
