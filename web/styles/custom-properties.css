@@ -43,7 +43,6 @@
   --width-large: 80em;
   --width-x-large: 100em;
 }
-
 @font-face {
   font-family: Quavo;
   src: url(/fonts/Quavo.otf);
