@@ -1,9 +1,21 @@
 import Link from "next/link";
 import styles from "./Mobilemenu.module.css";
+import imageUrlBuilder from "@sanity/image-url";
+import client from "../../client";
 
-const Mobilemenu = ({ props }) => {
+function urlFor(source) {
+  return imageUrlBuilder(client).image(source);
+}
+
+const Mobilemenu = ({ props, footerFields }) => {
   return (
     <ul className={styles.mobileMenu}>
+      <li className={styles.mobileMenuItem}>
+        <hr className={styles.mobileMenuDivider} />
+        <Link href={`/`} as={`/`}>
+          <a>Hem</a>
+        </Link>{" "}
+      </li>
       {props.pages.map((page, i) => {
         {
           if (page.slug) {
@@ -22,6 +34,19 @@ const Mobilemenu = ({ props }) => {
         }
       })}
       <hr className={styles.mobileMenuDivider} />
+      <div className={styles.mobileMenuBottomContainer}>
+      <li>
+        <img src={urlFor(props.footerFields[0].logo.asset).url()} />
+      </li>
+      <li>
+        <a href={`mailto:${props.footerFields[0].mail}`}>
+          {" "}
+          <span>{props.footerFields[0].mail}</span>
+        </a>
+      </li>
+      <li>{props.footerFields[0].phoneNumber.replaceAll('mobil: ', '')}</li>
+      <li>{props.footerFields[0].adress.replaceAll('adress: ', '')}</li>
+      </div>
     </ul>
   );
 };

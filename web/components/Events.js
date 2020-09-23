@@ -7,6 +7,8 @@ function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 const Events = ({ props }) => {
+
+
   return (
     <section className={styles.eventsSection}>
       {props.map((event, i) => {
