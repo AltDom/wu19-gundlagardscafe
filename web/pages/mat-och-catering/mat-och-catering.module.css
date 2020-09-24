@@ -67,6 +67,10 @@
     justify-content: space-between;
   }
 
+  .imageContainerDesktop img {
+    max-width: calc((100vw - 200px) / 4);
+  }
+
   .cafeCateringInfo {
     margin: 0px 100px 50px 100px;
     text-align: left;
