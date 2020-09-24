@@ -1,76 +1,51 @@
-.eventsSection {
-  display: grid;
-  grid-gap: 20px 20px;
-  grid-template-columns: repeat(auto-fit, minmax(493px, 1fr));
-  /* place-items: center; */
-  max-width: 1440px;
-  margin: 5px 0;
-}
-
 .eventText h1 {
   font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 200;
-  text-align: left;
+  text-align: center;
 }
 
 .eventText p {
   font-family: var(--secondary-font);
   font-size: 16px;
-}
-
-@media only screen and (min-width: 960px) {
-  .eventsSection {
-    margin: 0 auto;
-    padding: 0 100px;
-  }
-  .eventText p {
-    text-align: left;
-  }
+  text-align: center;
 }
 
 .eventCard {
-  min-height: 536px;
-  max-width: 493px;
+  /* max-width: 40%; */
+  width: 100%;
 }
 
-.eventCard > h1 {
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
-  font-family: var(--primary-font);
-  font-size: var(--font-base-size);
-  font-weight: 400;
-  margin: 5px 0;
+.eventsSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 356px;
+  margin: 0 auto;
 }
-
-.eventCard > p {
-  font-family: var(--secondary-font);
-  margin-block-start: 0;
-  text-align: left;
+.eventCard > img {
+  max-width: 100%;
 }
 
 /* Above 960px */
 @media only screen and (min-width: 960px) {
   .eventsSection {
     display: grid;
-    grid-gap: 20px 20px;
-    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    grid-gap: 20px 7%;
     /* place-items: center; */
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 100px;
   }
-}
 
-/* Below 960px */
-@media only screen and (max-width: 960px) {
-  .eventsSection {
-    display: flex;
-    flex-direction: column;
-    max-width: 356px;
-    margin: 0 auto;
+  .eventCard img {
+    width: 100%;
   }
-  .eventCard > img {
-    max-width: 100%;
+
+  .eventCard {
+    min-height: 540px;
+  }
+
+  .eventText p {
+    text-align: left;
   }
 }

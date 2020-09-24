@@ -10,16 +10,42 @@
 }
 
 .eventInfo p {
-  font-size: 16px;
-  font-family: var(--secondary-font);
+  display: none;
+}
+
+.facebookButton {
+  display: none;
 }
 
 @media only screen and (min-width: 960px) {
   .eventInfo {
-    margin: 50px 100px 50px 100px;
+    margin: 50px 100px 0 100px;
     text-align: left;
     display: flex;
     justify-content: space-between;
     width: 45%;
+  }
+
+  .facebookButton {
+    border: none;
+    margin: 0 100px 20px 100px;
+    height: 63px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    box-shadow: gray 0px 0px 6px 0px;
+    background-color: #3b5998;
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+  .eventInfo p {
+    display: block;
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    text-decoration: none;
   }
 }

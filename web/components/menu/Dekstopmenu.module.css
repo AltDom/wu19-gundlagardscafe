@@ -11,13 +11,13 @@
   .desktopMenu li {
     border: 2px solid var(--color-white);
     padding: 8px;
-    margin: 10px 0 0 64px;
+    margin: 32px 0 0 64px;
   }
 
   .desktopMenu li:hover {
     border: 2px solid var(--color-white);
     padding: 8px;
-    margin: 10px 0 0 64px;
+    margin: 32px 0 0 64px;
     background-color: var(--color-white);
   }
   .desktopMenu li:hover > a {
