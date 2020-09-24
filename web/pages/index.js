@@ -69,9 +69,6 @@ const Index = (props) => {
 export async function getStaticProps() {
   const pages = await client.fetch('*[_type == "page"]');
   const footerFields = await client.fetch('*[_type == "footer"]');
-  // const instagram = await fetch(`https://www.instagram.com/gundlagardscafe/?__a=1`);
-
-  // const instaJson = await instagram.json();
 
   return {
     props: { pages, footerFields }
