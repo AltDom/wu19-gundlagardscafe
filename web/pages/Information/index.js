@@ -1,11 +1,11 @@
-import client from "../../client";
-import Layout from "../../components/Layout";
-import Footer from "../../components/Footer";
-import getLocalProps from "../../functions/getLocalProps";
-import ContactForm from "../../components/ContactForm";
-import styles from "./Information.module.css";
-import BlockContent from "@sanity/block-content-to-react";
-import StreetMap from "../../components/StreetMap";
+import client from '../../client';
+import Layout from '../../components/Layout';
+import Footer from '../../components/Footer';
+import getLocalProps from '../../functions/getLocalProps';
+import ContactForm from '../../components/ContactForm';
+import styles from './information.module.css';
+import BlockContent from '@sanity/block-content-to-react';
+import StreetMap from '../../components/StreetMap';
 
 const Information = (props) => {
   const currentPageData = getLocalProps(props);
@@ -35,7 +35,7 @@ export async function getStaticProps() {
   const footerFields = await client.fetch('*[_type == "footer"]');
 
   return {
-    props: { pages, footerFields },
+    props: { pages, footerFields }
   };
 }
 
