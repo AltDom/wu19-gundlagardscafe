@@ -1,4 +1,4 @@
-import Navbar from './Menu/Navbar';
+import Navbar from './Navigation/Navbar';
 import imageUrlBuilder from '@sanity/image-url';
 import client from '../client';
 import styles from './Header.module.css';
