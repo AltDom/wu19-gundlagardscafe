@@ -1,6 +1,6 @@
-import styles from './InstagramFeedDesktop.module.css';
+import styles from './InstaFeedDesktop.module.css';
 
-const InstagramFeedDesktop = ({ props }) => {
+const InstaFeedDesktop = ({ props }) => {
   const allImages = props.graphql.user.edge_owner_to_timeline_media.edges;
   const eightImages = allImages.slice(0, 8);
 
@@ -18,4 +18,4 @@ const InstagramFeedDesktop = ({ props }) => {
   );
 };
 
-export default InstagramFeedDesktop;
+export default InstaFeedDesktop;

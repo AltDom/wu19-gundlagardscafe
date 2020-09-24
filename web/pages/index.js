@@ -5,10 +5,9 @@ import UpperSectionDesktop from '../components/UpperSectionDesktop';
 import styles from './index.module.css';
 import getLocalProps from '../functions/getLocalProps';
 import InstagramFeed from '../components/InstagramFeed';
-import InstagramFeedDesktop from '../components/InstagramFeedDesktop';
+import InstaFeedDesktop from '../components/InstaFeedDesktop';
 import BlockContent from '@sanity/block-content-to-react';
 import StreetMap from '../components/StreetMap';
-// Hello Samantha
 
 const Index = (props) => {
   const currentPageData = getLocalProps(props);
@@ -36,7 +35,7 @@ const Index = (props) => {
         </a>
         <UpperSectionDesktop currentPageData={currentPageData} />
         <InstagramFeed props={props.instaJson} />
-        <InstagramFeedDesktop props={props.instaJson} />
+        <InstaFeedDesktop props={props.instaJson} />
         <a href={'https://www.facebook.com/gundlagardscafe'} className={styles.instagramButton}>
           INSTAGRAM
         </a>
