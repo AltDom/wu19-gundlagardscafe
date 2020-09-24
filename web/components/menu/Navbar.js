@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import styles from './Navbar.module.css';
-import DesktopMenu from './DesktopMenu';
-import MobileMenu from './MobileMenu';
+import MenuDesktop from './MenuDesktop';
+import MenuMobile from './MenuMobile';
 const Navbar = ({ props }) => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -11,7 +11,7 @@ const Navbar = ({ props }) => {
   let ariaExpandedValue = false;
 
   if (showMenu) {
-    displayMobilemenu = <MobileMenu props={props} />;
+    displayMobilemenu = <MenuMobile props={props} />;
     ariaExpandedValue = 'true';
     mobileMenuText = '';
   }
@@ -23,7 +23,7 @@ const Navbar = ({ props }) => {
           <img src="../../images/logo.svg" alt="Gundla logo" className={styles.logo} />
         </a>
       </Link>
-      <DesktopMenu props={props} />
+      <MenuDesktop props={props} />
       <button
         className={styles.mobileMenuButton}
         onClick={() => setShowMenu(!showMenu)}

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './MobileMenu.module.css';
+import styles from './MenuMobile.module.css';
 import imageUrlBuilder from '@sanity/image-url';
 import client from '../../client';
 
@@ -7,7 +7,7 @@ function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 
-const MobileMenu = ({ props, footerFields }) => {
+const MenuMobile = ({ props, footerFields }) => {
   return (
     <ul className={styles.mobileMenu}>
       <li className={styles.mobileMenuItem}>
@@ -48,4 +48,4 @@ const MobileMenu = ({ props, footerFields }) => {
   );
 };
 
-export default MobileMenu;
+export default MenuMobile;

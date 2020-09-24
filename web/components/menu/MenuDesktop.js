@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from './DekstopMenu.module.css';
+import styles from './MenuDesktop.module.css';
 
-const DesktopMenu = ({ props }) => {
+const MenuDesktop = ({ props }) => {
   return (
     <ul className={styles.desktopMenu}>
       {props.pages.map((page, i) => {
@@ -29,4 +29,4 @@ const DesktopMenu = ({ props }) => {
   );
 };
 
-export default DesktopMenu;
+export default MenuDesktop;
