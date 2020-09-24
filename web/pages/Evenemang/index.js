@@ -14,6 +14,9 @@ const Information = (props) => {
       <div className={styles.eventInfo}>
         <BlockContent blocks={currentPageData.bodyOne} />
       </div>
+      <a href={'https://www.facebook.com/gundlagardscafe'} className={styles.facebookButton}>
+        FACEBOOK
+      </a>
       <Events props={props.eventData} />
       <Footer props={props.footerFields} />
     </>
