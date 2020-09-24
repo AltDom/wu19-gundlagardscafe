@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import client from '../client';
 import Footer from '../components/Footer';
@@ -10,6 +11,23 @@ import BlockContent from '@sanity/block-content-to-react';
 import StreetMap from '../components/StreetMap';
 
 const Index = (props) => {
+  const [gallery, setGallery] = useState(null);
+
+  useEffect(() => {
+    fetch('https://www.instagram.com/gundlagardscafe/?__a=1')
+      .then((res) => {
+        return res.json();
+      })
+      .then((feed) => {
+        setGallery(feed);
+      });
+  }, []);
+
+  let imageArray = [];
+  if (gallery) {
+    imageArray = gallery.graphql.user.edge_owner_to_timeline_media.edges;
+  }
+
   const currentPageData = getLocalProps(props);
   return (
     <>
@@ -34,8 +52,8 @@ const Index = (props) => {
           FACEBOOK
         </a>
         <UpperSectionDesktop currentPageData={currentPageData} />
-        <InstagramFeed props={props.instaJson} />
-        <InstaFeedDesktop props={props.instaJson} />
+        <InstagramFeed props={imageArray} />
+        <InstaFeedDesktop props={imageArray} />
         <a href={'https://www.facebook.com/gundlagardscafe'} className={styles.instagramButton}>
           INSTAGRAM
         </a>
@@ -51,12 +69,12 @@ const Index = (props) => {
 export async function getStaticProps() {
   const pages = await client.fetch('*[_type == "page"]');
   const footerFields = await client.fetch('*[_type == "footer"]');
-  const instagram = await fetch(`https://www.instagram.com/gundlagardscafe/?__a=1`);
+  // const instagram = await fetch(`https://www.instagram.com/gundlagardscafe/?__a=1`);
 
-  const instaJson = await instagram.json();
+  // const instaJson = await instagram.json();
 
   return {
-    props: { pages, footerFields, instaJson }
+    props: { pages, footerFields }
   };
 }
 

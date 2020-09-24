@@ -1,8 +1,8 @@
 import styles from './InstaFeedDesktop.module.css';
 
 const InstaFeedDesktop = ({ props }) => {
-  const allImages = props.graphql.user.edge_owner_to_timeline_media.edges;
-  const eightImages = allImages.slice(0, 8);
+  // const allImages = props.graphql.user.edge_owner_to_timeline_media.edges;
+  const eightImages = props.slice(0, 8);
 
   return (
     <>
