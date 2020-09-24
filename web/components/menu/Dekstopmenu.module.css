@@ -1,5 +1,6 @@
-/* styles for browsers larger than 960px; */
+/* Desktop menu styling */
 
+/* styles for browsers larger than 960px; */
 @media only screen and (min-width: 960px) {
   .desktopMenu {
     display: flex;
