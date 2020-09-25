@@ -10,7 +10,7 @@ The website is built using JavaScript framework Next.JS connected to a headless 
 
 ## Experience the website
 
-- The website is live at [Vercel](http://gundlagardscafe-grupp5.vercel.com).
+- The website is live at [Vercel](http://gundlagardscafe-grupp5.vercel.app).
 
 ## Designers and Developers
 
