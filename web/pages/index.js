@@ -54,7 +54,7 @@ const Index = (props) => {
         <UpperSectionDesktop currentPageData={currentPageData} />
         <InstagramFeed props={imageArray} />
         <InstaFeedDesktop props={imageArray} />
-        <a href={'https://www.facebook.com/gundlagardscafe'} className={styles.instagramButton}>
+        <a href={'https://www.instagram.com/gundlagardscafe'} className={styles.instagramButton}>
           INSTAGRAM
         </a>
         <BlockContent className={styles.mobileText} blocks={currentPageData.bodyFour} />

@@ -12,7 +12,6 @@
 }
 
 .eventCard {
-  /* max-width: 40%; */
   width: 100%;
 }
 
@@ -31,7 +30,6 @@
   .eventsSection {
     display: grid;
     grid-gap: 20px 7%;
-    /* place-items: center; */
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     max-width: 2000px;
     margin: 0 100px;
