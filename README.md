@@ -16,6 +16,6 @@ The website is built using JavaScript framework Next.JS connected to a headless 
 
 - [Alexander Gustafsson Flink](https://github.com/alexandergustafssonflink) - Web Developer
 - [Daniel Thorsen](https://github.com/DanThor) - Web Developer
-- Dominic Kersch - Web Developer
+- [Dominic Kersch](https://github.com/AltDom) - Web Developer
 - Tobias Lilja - Digital Design
 - Anton Henricson - Digital Design
